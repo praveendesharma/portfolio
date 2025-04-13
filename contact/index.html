@@ -8,24 +8,26 @@
 </head>
 <body>
     <nav>
-        <a href="../index.html">Home</a>
-        <a href="../projects/index.html">Projects</a>
-        <a href="../resume/index.html">Resume</a>
-        <a href="index.html">Contact</a>
-        <a href="https://github.com/praveendesharma" target="_blank">Github</a>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../resume/index.html">Resume</a></li>
+            <li><a class="current" href="index.html">Contact</a></li>
+            <li><a href="https://github.com/praveendesharma" target="_blank">Github</a></li>
+        </ul>
     </nav>
     <h1>Contact</h1>
     <form action="mailto:p4sharma@ucsd.edu" method="POST" enctype="text/plain">
         <label>
-            Email
+            Email:
             <input name="email" type="email">
         </label>
         <label>
-            Subject
+            Subject:
             <input name="subject">
         </label>
         <label>
-            Body
+            Message:
             <textarea name="body"></textarea>
         </label>
         <button>Submit</button>
