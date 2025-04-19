@@ -142,7 +142,7 @@ header p {
     color: oklch(40% 5% 250);
 }
 
-label {
+.color-scheme {
     position: absolute;
     top: 1rem;
     right: 1rem;
