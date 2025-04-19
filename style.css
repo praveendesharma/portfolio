@@ -141,3 +141,7 @@ header p {
     font-size: 0.95em;
     color: oklch(40% 5% 250);
 }
+
+select {
+    position: absolute;
+}
