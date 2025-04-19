@@ -58,6 +58,8 @@ document.body.insertAdjacentHTML(
       </label>`,
 );
 
+let select = document.getElementById('theme-selector');
+
 select.addEventListener('input', function (event) {
     console.log('color scheme changed to', event.target.value);
 });
