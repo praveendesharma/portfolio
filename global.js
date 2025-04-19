@@ -62,5 +62,6 @@ let select = document.querySelector('select');
 
 select.addEventListener('change', function (event) {
     console.log('color scheme changed to', event.target.value);
+    document.documentElement.style.setProperty('color-scheme', event.target.value);
 });
 
