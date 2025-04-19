@@ -18,11 +18,12 @@ ul, li {
 }
 
 nav {
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
     margin-bottom: 1em;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
 }
 
 nav a {
@@ -44,7 +45,7 @@ nav a:hover {
 nav a.current {
     border-bottom-width: 0.4em;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: var(--border-color);
     font-weight: bold;
 }
 
