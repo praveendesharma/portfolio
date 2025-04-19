@@ -142,6 +142,6 @@ header p {
     color: oklch(40% 5% 250);
 }
 
-select {
+label {
     position: absolute;
 }
