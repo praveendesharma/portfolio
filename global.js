@@ -58,11 +58,6 @@ document.body.insertAdjacentHTML(
       </label>`,
 );
 
-if ("colorScheme" in localStorage) {
-    document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
-    select.value = localStorage.colorScheme;
-}
-
 let select = document.querySelector('select');
 
 select.addEventListener('input', function (event) {
@@ -70,4 +65,9 @@ select.addEventListener('input', function (event) {
     document.documentElement.style.setProperty('color-scheme', event.target.value);
     localStorage.colorScheme = event.target.value;
 });
+
+if ("colorScheme" in localStorage) {
+    document.documentElement.style.setProperty('color-scheme', localStorage.colorScheme);
+    select.value = localStorage.colorScheme;
+}
 
