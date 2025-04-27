@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Power Outages Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "In this project, we explored the relationship between the different classifications of regions, namely states and climate region, and the average outage duration, and developed a predictive model using GradientBoostingRegressor."
+    },
+    {
+        "title": "UCSD Enrollment Prediction",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Predicted open seats in UCSD courses using enrollment data, capacity, fill rate, and class standing with machine learning techniques."
+    },
+    {
+        "title": "MTS Network Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Analyzed bus arrival times using Poisson processes, including the Waiting Time Paradox, and visualized real-world transit data."
+    },
+    {
+        "title": "N-Gram Language Model",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built a text generation model using N-Gram probabilities, improving sentence coherence and reducing perplexity."
+    },
+    {
+        "title": "Grocery Pricing Analysis",
+        "year": "2025",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Compared pricing and nutritional content of food products across major retailers like Whole Foods, Walmart, and Target."
+    },
+    {
+        "title": "Multiproduction Trade Credit Research",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Explored firm networks and trade credit flows in multi-production settings for an economics research project."
+    },
+    {
+        "title": "Nihil beatae dolores quibusdam?",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Dolore veniam saepe expedita sed id. Labore ad quam ab molestiae officiis iusto repudiandae maiores nulla exercitationem laudantium voluptatibus eos sequi voluptatem libero quia a ipsam nam, deserunt accusamus corporis!"
+    },
+    {
+        "title": "Quo dolores officiis provident?",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Velit, quisquam tenetur, nemo similique alias quidem obcaecati quia ipsam aperiam omnis vitae quaerat eaque, totam cum officiis facilis iure corporis magnam ratione vel modi placeat. Dolore temporibus repellat autem."
+    },
+    {
+        "title": "Doloremque ducimus iste commodi?",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Unde quisquam illum sed sint doloribus commodi quaerat ducimus eveniet, dolorem ea nobis expedita odit nisi veritatis voluptatum possimus! Nulla velit reprehenderit non doloremque deleniti libero, ab temporibus commodi. Blanditiis?"
+    },
+    {
+        "title": "Officiis debitis repellendus ipsam.",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Veritatis deserunt doloremque debitis velit officia repellendus eaque veniam natus illo architecto saepe perferendis, quasi dolores magnam. Repudiandae illum ex mollitia eius itaque sunt, iure ipsa illo rem, autem sit."
+    },
+    {
+        "title": "Laboriosam ex eveniet recusandae?",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Inventore odit fugit consequuntur vitae voluptas a quod asperiores quam, nisi id doloribus, aspernatur eos tempore quos? Accusantium laudantium maxime vel, perferendis, impedit esse error deleniti sed non nihil voluptatum."
+    },
+    {
+        "title": "Fuga dolorem debitis quod!",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Doloribus possimus totam voluptates culpa expedita, debitis distinctio provident aspernatur. Sapiente minus quas totam, dignissimos eius reprehenderit at fuga quia! Sit quas ea consequuntur officia modi culpa aut, vitae repellendus."
+    }
+]
