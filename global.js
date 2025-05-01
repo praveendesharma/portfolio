@@ -89,30 +89,35 @@ export async function fetchJSON(url) {
 }
 
 export function renderProjects(projects, containerElement, headingLevel = 'h2') {
-    if (!containerElement) return;
-  
+    if (!containerElement) {
+    console.error('Container element not found!');
+    return;
+    }
+
+    // Validate headingLevel
     const validHeadings = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
     if (!validHeadings.includes(headingLevel)) {
-      headingLevel = 'h2';
+    console.warn(`Invalid heading level "${headingLevel}", defaulting to h2`);
+    headingLevel = 'h2';
     }
-  
+
+    // Clear existing content
     containerElement.innerHTML = '';
-  
+
+    // Render each project
     projects.forEach((project) => {
-      const article = document.createElement('article');
-  
-      // Create a linked title if a link is provided
-      const titleHTML = project.link
-        ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer"><${headingLevel}>${project.title}</${headingLevel}></a>`
-        : `<${headingLevel}>${project.title}</${headingLevel}>`;
-  
-      article.innerHTML = `
-        ${titleHTML}
+    const article = document.createElement('article');
+
+    article.innerHTML = `
+        <${headingLevel}>${project.title}</${headingLevel}>
         <img src="${project.image}" alt="${project.title}">
         <p>${project.description}</p>
-      `;
-  
-      containerElement.appendChild(article);
+    `;
+
+    containerElement.appendChild(article);
     });
-  }
-  
+}
+
+export async function fetchGitHubData(username) {
+    return fetchJSON(`https://api.github.com/users/${username}`);
+}
