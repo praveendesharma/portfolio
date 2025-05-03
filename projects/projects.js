@@ -10,6 +10,7 @@ const projectsTitle = document.querySelector('.projects-title');
 const piePlot = document.querySelector('#projects-pie-plot');
 const legend = document.querySelector('.legend');
 const searchInput = document.querySelector('.searchBar');
+
 let query = '';
 let selectedIndex = -1;
 
@@ -27,6 +28,7 @@ if (projects && projects.length > 0) {
 // === Search bar filtering ===
 searchInput?.addEventListener('input', (event) => {
   query = event.target.value.toLowerCase();
+
   const filteredProjects = projects.filter((project) => {
     const values = Object.values(project).join('\n').toLowerCase();
     return values.includes(query);
@@ -35,6 +37,7 @@ searchInput?.addEventListener('input', (event) => {
   selectedIndex = -1; // reset pie filter on new search
   renderProjects(filteredProjects, projectsContainer, 'h2');
   renderPieChart(filteredProjects);
+
   if (projectsTitle) {
     projectsTitle.textContent = `${filteredProjects.length} Projects`;
   }
@@ -67,6 +70,7 @@ function renderPieChart(projectsGiven) {
   const colors = d3.scaleOrdinal(d3.schemeTableau10);
 
   const svg = d3.select('#projects-pie-plot');
+  const legendList = d3.select('.legend'); // ✅ moved here so it's declared before use
 
   // Draw wedges with click-to-filter
   arcs.forEach((arc, i) => {
@@ -77,22 +81,22 @@ function renderPieChart(projectsGiven) {
       .attr('class', i === selectedIndex ? 'selected' : '')
       .on('click', () => {
         selectedIndex = selectedIndex === i ? -1 : i;
-      
+
         svg.selectAll('path')
           .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-      
+
         legendList.selectAll('li')
           .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-      
+
         // Apply BOTH filters: search + year (if selected)
-        let filtered = projects.filter((project) => {
-          let matchQuery = Object.values(project).join('\n').toLowerCase().includes(query);
-          let matchYear = selectedIndex === -1 || project.year === data[selectedIndex].label;
+        const filtered = projects.filter((project) => {
+          const matchQuery = Object.values(project).join('\n').toLowerCase().includes(query);
+          const matchYear = selectedIndex === -1 || project.year === data[selectedIndex].label;
           return matchQuery && matchYear;
         });
-      
+
         renderProjects(filtered, projectsContainer, 'h2');
-      
+
         if (projectsTitle) {
           if (selectedIndex === -1) {
             projectsTitle.textContent = `${filtered.length} Matching Projects`;
@@ -105,7 +109,6 @@ function renderPieChart(projectsGiven) {
   });
 
   // Draw legend
-  const legendList = d3.select('.legend');
   data.forEach((d, i) => {
     legendList
       .append('li')
@@ -114,22 +117,22 @@ function renderPieChart(projectsGiven) {
       .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`)
       .on('click', () => {
         selectedIndex = selectedIndex === i ? -1 : i;
-      
+
         svg.selectAll('path')
           .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-      
+
         legendList.selectAll('li')
           .attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
-      
+
         // Apply BOTH filters: search + year (if selected)
-        let filtered = projects.filter((project) => {
-          let matchQuery = Object.values(project).join('\n').toLowerCase().includes(query);
-          let matchYear = selectedIndex === -1 || project.year === data[selectedIndex].label;
+        const filtered = projects.filter((project) => {
+          const matchQuery = Object.values(project).join('\n').toLowerCase().includes(query);
+          const matchYear = selectedIndex === -1 || project.year === data[selectedIndex].label;
           return matchQuery && matchYear;
         });
-      
+
         renderProjects(filtered, projectsContainer, 'h2');
-      
+
         if (projectsTitle) {
           if (selectedIndex === -1) {
             projectsTitle.textContent = `${filtered.length} Matching Projects`;
