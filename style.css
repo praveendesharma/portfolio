@@ -165,3 +165,85 @@ header p {
     grid-row: 2;
     margin: 0;
 }
+
+#projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+}
+
+/* Pie chart and legend layout */
+.pie-container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    flex-wrap: wrap;
+}
+  
+  /* SVG chart */
+  #projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+}
+  
+  /* Legend styles */
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    flex: 1;
+}
+  
+  .legend li {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+  
+  .legend .swatch {
+    display: inline-block;
+    width: 1em;
+    aspect-ratio: 1;
+    background-color: var(--color);
+    border-radius: 0.25em;
+}
+
+.searchBar {
+    margin-top: 2em;
+    margin-bottom: 2em;  /* <-- Adds space beneath the bar */
+    padding: 0.75em 1em;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  /* Smooth transition + pointer cursor */
+#projects-pie-plot path {
+    transition: 300ms;
+    cursor: pointer;
+  }
+  
+  /* Fade out others when hovering */
+  #projects-pie-plot:has(path:hover) path:not(:hover) {
+    opacity: 0.5;
+  }
+  
+  /* Highlight selected wedge and legend */
+  .selected {
+    --color: oklch(60% 45% 0) !important;
+  }
+  
+  .selected:is(path) {
+    fill: var(--color);
+  }
+  
+  .selected:is(li) {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
