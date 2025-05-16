@@ -1,2 +1,2 @@
 # portfolio
- DSC 106 Lab 01
+ DSC 106 Labs 01-08
