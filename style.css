@@ -358,5 +358,20 @@ circle.selected {
   grid-row: 2; /* Ensures all dd elements stay in the second row */
 }
   
-  
-  
+.projects article img {
+  width: 100%;
+  height: 50%;
+  padding-top: 10px;
+  object-fit: cover;
+}
+
+.projects article h2 a,
+.projects article h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.projects article h2 a:hover,
+.projects article h3 a:hover {
+  text-decoration: underline;
+}

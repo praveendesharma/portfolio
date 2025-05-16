@@ -1,20 +1,41 @@
 [
     {
-        "title": "DSC 106 Project 2",
+        "title": "Bike Goggles",
         "year": "2025",
-        "link": "../projects/project02/project2_report.html",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Dolore veniam saepe expedita sed id. Labore ad quam ab molestiae officiis iusto repudiandae maiores nulla exercitationem laudantium voluptatibus eos sequi voluptatem libero quia a ipsam nam, deserunt accusamus corporis!"
+        "url": "https://praveendesharma.github.io/bikegoggles/",
+        "image": "../projects/images/bike-goggles.png",
+        "description": "I created an interactive map using mapbox and d3 that allows users to visulaize bike lanes and traffic at various times of the day in Boston and Cambridge, MA."
     },
     {
-        "title": "Power Outages Analysis",
+        "title": "Mindful Metrics",
         "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "In this project, we explored the relationship between the different classifications of regions, namely states and climate region, and the average outage duration, and developed a predictive model using GradientBoostingRegressor."
+        "url": "https://praveendesharma.github.io/meditation-trends/",
+        "image": "../projects/images/meditation-viz.png",
+        "description": "Built an interactive data visualization tool that allows users to compares changes in heart rate across various meditation techniques against normal and athlete baseline readings."
+    },
+    {
+        "title": "Deceptive Visualizations",
+        "year": "2025",
+        "url": "https://praveendesharma.github.io/dsc106-project2/",
+        "image": "../projects/images/deceptive-viz.png",
+        "description": "I created a pair of visualizations, one arguing for and the other agaisnt the proposition that black complainants are disproportionately involved in repeat incidents with the same police officers using NYPD police complaints data."
+    },
+    {
+        "title": "Grocery Pricing Analysis",
+        "year": "2025",
+        "image": "../projects/images/grocery-viz.png",
+        "description": "Compared pricing and nutritional content of food products across major retailers like Whole Foods, Walmart, and Target."
+    },
+    {
+        "title": "Power Outage Predictions",
+        "year": "2025",
+        "url": "https://chinmayb1.github.io/power-outage-project/",
+        "image": "../projects/images/outage-viz.png",
+        "description": "Explored the relationship between the different classifications of regions and outage duration, and developed a machine learning model to develop a prediction system."
     },
     {
         "title": "UCSD Enrollment Prediction",
-        "year": "2025",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Predicted open seats in UCSD courses using enrollment data, capacity, fill rate, and class standing with machine learning techniques."
     },
@@ -26,33 +47,15 @@
     },
     {
         "title": "N-Gram Language Model",
-        "year": "2025",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Built a text generation model using N-Gram probabilities, improving sentence coherence and reducing perplexity."
-    },
-    {
-        "title": "Grocery Pricing Analysis",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Compared pricing and nutritional content of food products across major retailers like Whole Foods, Walmart, and Target."
     },
     {
         "title": "Multiproduction Trade Credit Research",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Explored firm networks and trade credit flows in multi-production settings for an economics research project."
-    },
-    {
-        "title": "Quo dolores officiis provident?",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Velit, quisquam tenetur, nemo similique alias quidem obcaecati quia ipsam aperiam omnis vitae quaerat eaque, totam cum officiis facilis iure corporis magnam ratione vel modi placeat. Dolore temporibus repellat autem."
-    },
-    {
-        "title": "Doloremque ducimus iste commodi?",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Unde quisquam illum sed sint doloribus commodi quaerat ducimus eveniet, dolorem ea nobis expedita odit nisi veritatis voluptatum possimus! Nulla velit reprehenderit non doloremque deleniti libero, ab temporibus commodi. Blanditiis?"
     },
     {
         "title": "Officiis debitis repellendus ipsam.",
