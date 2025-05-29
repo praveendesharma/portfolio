@@ -389,7 +389,7 @@ circle {
   }
 }
 
-#slider-container {
+/* #slider-container {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -417,9 +417,8 @@ circle {
   margin-top: 0.5em;
   font-size: 0.95rem;
   text-align: right;
-  /* font-family: monospace; */
   color: #444;
-}
+} */
 
 #files {
   display: grid;
@@ -455,4 +454,27 @@ circle {
   aspect-ratio: 1;
   background: var(--color, steelblue);
   border-radius: 50%;
+}
+
+#scrolly-1 {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+}
+
+#scrolly-1 > * {
+  flex: 1;
+}
+
+#scatter-plot {
+  position: sticky;
+  top: 0;
+  height: 50vh;
+}
+
+#scatter-story .step {
+  padding-bottom: 100vh;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 1rem;
+  margin-bottom: 2rem;
 }
