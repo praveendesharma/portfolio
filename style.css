@@ -473,8 +473,7 @@ circle {
 }
 
 #scatter-story .step {
-  padding-bottom: 100vh;
-  border-left: 3px solid var(--color-accent);
+  margin-bottom: 1rem;
   padding-left: 1rem;
-  margin-bottom: 2rem;
+  border-left: 3px solid var(--color-accent);
 }

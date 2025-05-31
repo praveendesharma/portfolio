@@ -36,7 +36,7 @@ function processCommits(data) {
     const { author, date, time, timezone, datetime } = lines[0];
     const entry = {
       id: commit,
-      url: 'https://github.com/suchitbhayani/portfolio/commit/' + commit,
+      url: 'https://github.com/praveendesharma    /portfolio/commit/' + commit,
       author, date, time, timezone, datetime,
       hourFrac: datetime.getHours() + datetime.getMinutes() / 60,
       totalLines: lines.length,
