@@ -1,4 +1,4 @@
-# 🧠 Praveen Sharma – Portfolio
+# 🧠 Portfolio
 
 Welcome to my little corner of the internet.
 
@@ -19,7 +19,7 @@ This site is meant to grow with me — expect updates, reworks, and new rabbit h
 ## 🛠️ Tech Stack
 
 - HTML5 / CSS3
-- Vanilla JavaScript (no frameworks—for now)
+- Vanilla JavaScript (no frameworks — for now)
 - GitHub Pages for deployment
 
 ## 🌱 In Progress
