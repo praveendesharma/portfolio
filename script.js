@@ -14,6 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const copilotSuggestion = '// Copilot: Let me help you complete this...';
   const copilotFinal = '// Copilot: Looks good!';
   const codeBlock = document.getElementById('code-script');
+  const runButton = document.getElementById('run-button');
+  const aboutContent = document.getElementById('about-content');
   let currentChar = 0;
   let currentLine = 1;
 
@@ -78,6 +80,29 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 400);
     }
   }
+
+  // Handle run button click
+  runButton.addEventListener('click', function() {
+    // Show the about content with a smooth fade-in effect
+    aboutContent.style.display = 'block';
+    aboutContent.style.opacity = '0';
+    aboutContent.style.transform = 'translateY(20px)';
+    
+    // Trigger the animation
+    setTimeout(() => {
+      aboutContent.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+      aboutContent.style.opacity = '1';
+      aboutContent.style.transform = 'translateY(0)';
+    }, 10);
+    
+    // Scroll to the about content
+    setTimeout(() => {
+      aboutContent.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start' 
+      });
+    }, 100);
+  });
 
   // Start the animation sequence
   setTimeout(typeFirstLine, 800);

@@ -9,10 +9,10 @@
 <body>
     <nav class="navbar">
         <ul class="nav-section nav-left">
-            <li><a>about me</a></li>
+            <li><a href="about.html">about me</a></li>
             <li><a>side quests</a></li>
         </ul>
-        <a class="nav-center">Praveen Sharma</a>
+        <a class="nav-center" href="index.html">Praveen Sharma</a>
         <ul class="nav-section nav-right">
             <li><a>work & projects</a></li>
             <li><a>blog</a></li>
@@ -21,7 +21,23 @@
     <h1 class="intro-headline">data scientist, with a thing for <span class="code-bold">side quests.</span></h1>
     <div class="intro">
         <pre class="code-script" id="code-script"></pre>
-        <button class="code-run">Run <span class="play">▶</span></button>
+        <button class="code-run" id="run-button">Run <span class="play">▶</span></button>
+    </div>
+    <div class="about-content" id="about-content" style="display: none;">
+        <div class="about-section">
+            <h2>About Me</h2>
+            <p>Picture this: a data scientist who thinks in algorithms but dreams in Formula 1 lap times. That's me in a nutshell.</p>
+            
+            <p>My journey into the world of data science started with a simple question: "How can we make sense of the chaos?" Whether it's analyzing race telemetry data to shave milliseconds off lap times, or building predictive models that actually work in the real world, I'm obsessed with finding patterns in the noise.</p>
+            
+            <p>When I'm not knee-deep in Python notebooks or debugging neural networks, you'll find me solving Rubik's cubes at speeds that make my friends question my sanity (sub-15 seconds, if you're curious). There's something poetic about optimizing algorithms both in code and with my hands.</p>
+            
+            <p>Music is my other constant companion. I've been known to write algorithms that compose music based on my mood, and yes, I've actually built a system that generates playlists based on my coding productivity patterns. Because why not?</p>
+            
+            <p>Now for the eyebrow-raising part: I collect vintage calculators (the kind that NASA used), I'm learning to juggle while solving cubes (still working on that), and I have a spreadsheet tracking every coffee I've ever had, complete with brewing method, origin, and my productivity levels afterward. Data nerd? Absolutely. But hey, at least I can tell you exactly which Ethiopian Yirgacheffe pairs best with debugging session errors.</p>
+            
+            <p>I believe the best solutions come from unexpected intersections. Maybe that's why I'm equally comfortable discussing the aerodynamics of F1 cars, the mathematics behind speedcubing algorithms, and the latest developments in machine learning. It's all connected, right?</p>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
